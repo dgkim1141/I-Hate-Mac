@@ -9,7 +9,8 @@ M1 맥북 프로를 지르고 언리얼 엔진을 깔면서 생기는 처참한 
 ## 목표
 - [x] 언리얼 4.26 구동
 - [ ] XCode 12.4 IDE 세팅(보류. 8시간동안 Indexing을 돌려도 컴플리션이 안먹히는 IDE가 있다? 뿌슝빠슝뿌슝)
-- [ ] VSCode (1.55.2, Universal) 환경에서 IDE 세팅(NEW) 
+- [x] VSCode (1.55.2, Universal) 환경에서 IDE 세팅 
+- [x] VSCode 프로젝트 빌드 실패 <= 2021.05.11 지금 여기
 
 
 
@@ -21,7 +22,8 @@ M1 맥북 프로를 지르고 언리얼 엔진을 깔면서 생기는 처참한 
 1. UE4 Preference창에서 Source Code Editor를 VSCode로 변경
 2. 재실행후 File => Refresh Visual stuidio code project
 
-{
+```
+c_cpp_properties.json
             "name": "TestProject2Editor Editor Mac Development (TestProject2)",
             "intelliSenseMode": "clang-x64",
             "defines" : [] <= 여기
@@ -32,7 +34,7 @@ M1 맥북 프로를 지르고 언리얼 엔진을 깔면서 생기는 처참한 
             "compileCommands": "/Users/gimdong-gyu/UnrealEngine/TestProject2/TestProject2/.vscode/compileCommands_TestProject2.json",
             "cStandard": "c11",
             "cppStandard": "c++98"
-}
+```
 
 3. 위에 <=여기 라고 표시된 defines에 아래 속성을 입력한다.
 
